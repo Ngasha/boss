@@ -1,0 +1,8 @@
+- name: about
+- name: team
+  icon: user
+- name: gallery
+  icon: th
+  url: /gallery/
+- name: contact
+  icon: envelope

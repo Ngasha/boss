@@ -1,0 +1,539 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+/*.bgimg{
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(170, 31, 96, 0.445), rgba(113, 11, 172, 0.63)),
+    url("./img/exterior2.jpg");
+    min-height: 100%;
+}*/
+.w3-bar .w3-button {
+    padding: 16px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.main-content{
+  padding: 54px 0;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    justify-content: space-around;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .card img{
+      height:390px;
+      width: 240px;
+      border-radius: 50%;
+      border: 2px solid #99254a;
+  }
+
+  /*slide-show container*/
+  .slideshow-container{
+    float: right;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .phone,
+  .fade,
+  .fade1 img{
+    max-width: 75%;
+    justify-content: center;
+  }
+  .slideshow-container{
+    max-width: 75%;
+  }
+  .card {
+      background-color: 0 4px 8px 0 rgba(68, 68, 27, 0.795);
+    box-shadow: 0 4px 8px 0 rgba(110, 207, 45, 0.712);
+  }
+  
+  .containeri {
+    padding: 0 16px;
+  }
+  
+  .containeri::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: mediumspringgreen;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(rgba(12, 9, 12, 0.726), rgba(22, 17, 8, 0.623)),url("/img/exterior2.jpg");
+    min-height: 100vh;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+/*navbar*/
+.w3-whiti {
+    background-color: rgba(196, 226, 23, 0.925);
+}
+.containera {
+  border: 2px solid rgb(168, 142, 142);
+  background-color: rgb(202, 226, 218);
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+/*contact*/
+.w3-darki-grey{
+    background-color: #f9c1ba;
+}
+.test{
+    display: flex;
+    flex-direction: initial;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.testimon{
+    height: 40vh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.testimon h3{
+    font-size: 28px;
+    margin-top: 0;
+}
+/*tteam
+.tteam{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}*/
+
+.containera::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.containera img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.containera span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .containera {
+      text-align: center;
+  }
+  .containera img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+  .testimon{
+      margin-bottom: 50%;
+  }
+}
+
+
+
+/*styles for automatic slideshow*/
+.mySlides {display: none;}
+img {vertical-align: right;}
+
+/*fade*/
+.fade img{
+  height: 400px;
+  width: 500px;
+  border: 2px solid #9e1f9e;
+  border-radius: 10%;
+  float: right;
+  margin-right: 55px;
+}
+.fade1 img{
+  height: 400px;
+  width: 500px;
+  border: 2px solid #2b970a;
+  border-radius: 12%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  margin-right: 55px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshoww-container {
+  max-width: 500px;
+  position: relative;
+  float: left;
+  margin: auto;
+}
+
+.slideshowww-container {
+  max-width: 500px;
+  position: relative;
+  float: right;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.text1 {
+    color: #2b970a;
+    font-size: 31px;
+    font-weight: 700;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+  }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(24, 165, 153);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.mySlides {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+.text-block1{
+    position: absolute;
+    color: #9e1f9e;
+    font-size: 31px;
+    font-weight: 700;
+    text-align: center;
+    bottom: -10px;
+    right: -40px;
+}
+
+
+
+/*parallax*/
+.parallax{
+  background-image: linear-gradient(rgba(15, 3, 9, 0.678), rgba(23, 2, 36, 0.712)),url("./img/paint.jpg");
+  height: 60%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/*parallax1*/
+.parallax1{
+  background-image: url("./img/interior1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+@media only screen and(max-device-width:1366px){
+  .parallax{
+    display: none;
+  }
+  .parallax1{
+    background-attachment: scroll;
+  }
+}
+
+/*interior*/
+.interior{
+  min-height:70vh;
+  width:100%;
+  background-color: rgba(66, 62, 62, 0.877);
+}
+.interior{
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(182, 228, 15);
+  font-weight: 600;
+  font-size: 23px;
+  font-style: oblique;
+}
+
+.interior1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.interior1 > div {
+  width: 340px;
+  height: 265px;
+  margin: auto;
+}
+
+/*exteriou design*/
+.exterior{
+  min-height:70vh;
+  width:100%;
+  background-color: rgba(105, 72, 72, 0.719);
+}
+.exterior{
+  text-align: center;
+  font-family: cursive;
+  color: springgreen;
+  font-weight: 600;
+  font-size: 23px;
+  font-style: oblique;
+}
+.exterior1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.exterior1 > div {
+  width: 340px;
+  height: 265px;
+  margin: auto;
+}
+.w3-padding-64e{
+  padding: 0;
+}
+.w3-padding-64{
+  padding: 0;
+}
+/*contact*/
+.contact{
+  float: left;
+  margin-left: 40px;
+}
+/*the team*/
+.team{
+  min-height: 85vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.932);
+}
+.team{
+  text-align: center;
+  color: #f9c1ba;
+  margin-top: 0;
+  padding-right: 12px;
+}
+h1,h2{
+  margin: 0;
+}
+.timi{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.timi > div img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+
+
+
+
+/*slide*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containery {
+  height: 60vh;
+  margin-top: 40px;
+}
+
+/* Hide the images by default */
+.mySlidesy {
+  display: none;
+}
+/* .mySlidesy:first-of-type{
+  display: block !important;
+} */
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertexty {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+

@@ -1,0 +1,105 @@
+---
+layout: default
+permalink: /gallery/
+---
+<!--slideshow-->
+
+<!-- Container for the image gallery -->
+<div class="containery" id="work">
+
+  <!-- Full-width images with number text -->
+  {% for i in (1..4) %}
+  <div class="mySlidesy">
+      <div class="numbertexty"> / 6</div>
+        <img src="/img/interior1.jpg" style="width:100%">
+    </div>
+  {% endfor %}
+  <div class="mySlidesy">
+    <div class="numbertexty">1 / 6</div>
+    <img src="/img/interior{{forloop.index}}.jpg" style="width:100%">
+  </div>
+
+
+  <div class="mySlidesy">
+    <div class="numbertexty">6 / 18</div>
+      <img src="/img/exterior2.jpg" style="width:100%">
+  </div>
+  
+  
+  {% for i in (1..5) %}
+  <div class="mySlidesy">
+      <div class="numbertexty"> / 6</div>
+        <img src="/img/tile{{ forloop.index }}.jpg" style="width:100%">
+    </div>
+  {% endfor %}
+  {% for i in (1..5) %}
+  <div class="mySlidesy">
+      <div class="numbertexty"> / 6</div>
+        <img src="/img/wallpaper{{ forloop.index }}.jpg" style="width:100%">
+    </div>
+  {% endfor %}
+  {% for i in (1..4) %}
+  <div class="mySlidesy">
+      <div class="numbertexty"> / 6</div>
+        <img src="/img/ceiling{{ forloop.index }}.jpg" style="width:100%">
+    </div>
+  {% endfor %}
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/img/interior1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Interior Design"> 
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="/img/interior2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Interior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/interior3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Interior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/interior4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Interior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/exterior1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Exterior Design">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="/img/exterior2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Exterior Design">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/tile1.jpg" style="width:100%" onclick="currentSlide(7)" alt="tiling">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="/img/tile3.jpg" style="width:100%" onclick="currentSlide(8)" alt="tiling">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/tile5.jpg" style="width:100%" onclick="currentSlide(9)" alt="tiling">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/wallpaper1.jpg" style="width:100%" onclick="currentSlide(10)" alt="wallpaper">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/wallpaper2.jpg" style="width:100%" onclick="currentSlide(11)" alt="wallpaper">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/wallpaper4.jpg" style="width:100%" onclick="currentSlide(12)" alt="wallpaper">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/img/wallpaper5.jpg" style="width:100%" onclick="currentSlide(13)" alt="Exterior Design">
+    </div>
+    
+  {% for i in (1..4) %}
+    {% assign num = forloop.index %}
+    <div class="column">
+      <img class="demo cursor" src="/img/celing{{ num }}.jpg" style="width:100%" onclick="currentSlide(14)" alt="celing design">
+    </div>
+  {% endfor %}
+</div>
