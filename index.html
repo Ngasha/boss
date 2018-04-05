@@ -68,129 +68,13 @@ layout: default
  
 <!-- Promo Section "Statistics" -->
 
+{% include sections/work.html %}
 
-<!-- Work Section -->
-<div class="w3-container" style="padding:px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
-
-  <div class="w3-row-padding" style="margin-top:44px;margin-bottom:8px">
-    <div class="w3-col l3 m6">
-      <img src="./img/in1.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="Interior design">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./img/interior2.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="painting">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./img/in.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="interior design">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./img/out2.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="Exterior design">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="./img/out.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="Exterior design">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./img/exterior2.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="house renovatio">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./img/exterior6.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="tiles fitting">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="./img/celing3.jpg" style="width:100%;margin-bottom: 8px" onclick="onClick(this)" class="w3-hover-opacity" alt="wall tile fitting">
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>We are experts in.</h3>
-      <p>We are a group of professional with the best working skill and experience.</p>
-      <p>Trust your house project to a proffessional contractor and you will leave</br>happily, PiaintBoss is a client friendly company that is here to make your dream house come to reality. We are the best contractors with qualified workers.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Interior & Exterior wall Painting</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">100%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Floor/wall Tiling</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">100%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Glass window istallation</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">100%</div>
-      </div>
-    </div>
-  </div>
-</div>
-
+{% include sections/skills.html %}
 <!--meet the team-->
-<div class="team" id="team">
-  <h1>Meet the Team</h1>
-  <div class="timi">
-    <div><img src="./img/wamiselo.jpg" alt="michigan"></div>
-    <div class="containeri">
-      <h2>Michi</h2>
-      <p>Founder</p>
-      <p>Expect the best</p>
-      <p><button class="button">Contact</button></p>
-    </div>
-    <div><img src="./img/patel.jpg" alt="peter"></div>
-    <div class="containeri">
-      <h2>peter patel</h2>
-      <p>organiser & marketer</p>
-      <p>I believe in quality</p>
-      <p><button class="button">Contact</button></p>
-    </div>
-  </div>
-  <div class="w3-row" id="contact">
-    <div class="w3-half w3-darki-grey w3-container w3-center" style="height:400px;background-color:#111;">
-      <div class="w3-padding-64">
-        <h1>Swing By</h1>
-      </div>
-      <div class="w3-padding-64e">
-        <p>..for a cup of coffee, or whatever.</p>
-        <p>Central, Kenya</p>
-        <p>+254 0792562569</p>
-        <p>paintboss@gmail.com</p>
-      </div>
-    </div>
-    {% include sections/form.html %}
-  </div>
-</div>
 
- <!-- Testimonials -->
- <div class="testimon">
-  <h1>Testimonials</h1>
-  <div class="test">
-    <div class="containera">
-      <img src="./img/proud2.jpg" alt="Avatar" style="width:90px">
-      <p><span>Chris Kimau.</span> CEO at Mighty Schools.</p>
-      <p>PaintBoss saved us from a painting disaster, we are proud you did us a nice job.</p>
-    </div>
-  
-    <div class="containera">
-      <img src="./img/proud.jpg" alt="Avatar" style="width:90px">
-      <p><span>Rebecca Mwende.</span> CEO at Company.</p>
-      <p>No company is better than PaintBoss.Am hoping to work with you in future</p>
-    </div>
-  </div>
-</div>
+{% include sections/team.html %}
+
+{% include sections/testimonials.html %}
 
 
