@@ -132,7 +132,7 @@ body{
     display: flex;
     flex-direction: initial;
     flex-wrap: wrap;
-    margin: auto;
+    margin-bottom: 20px;
     justify-content: space-around;
 }
 
