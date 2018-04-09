@@ -119,11 +119,9 @@ body{
     background-color: rgba(196, 226, 23, 0.925);
 }
 .containera {
-  border: 2px solid rgb(168, 142, 142);
-  background-color: rgb(202, 226, 218);
-  border-radius: 5px;
-  padding: 8px;
-  margin-top: 5px;
+  box-shadow: 0 23px 35px 0 rgba(164,164,164,0.4);
+  padding: 5px;
+  margin-top: 10px;
 }
 
 /*contact*/
@@ -139,7 +137,7 @@ body{
 }
 
 .testimon{
-    height: 40vh;
+    height: 60vh;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -184,6 +182,9 @@ body{
   }
   .testimon{
       margin-bottom: 50%;
+      display: flex;
+      flex-wrap: wrap;
+
   }
 }
 
@@ -354,20 +355,31 @@ img {vertical-align: right;}
     background-attachment: scroll;
   }
 }
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
 /*interior*/
 .interior{
   min-height:70vh;
   width:100%;
-  background-color: rgba(66, 62, 62, 0.877);
+  background-color: rgba(236, 231, 231, 0.021);
 }
 .interior{
   text-align: center;
   font-family: sans-serif;
-  color: rgb(182, 228, 15);
+  color: ghostwhite;
   font-weight: 600;
   font-size: 23px;
-  font-style: oblique;
 }
 
 .interior1{
@@ -386,16 +398,15 @@ img {vertical-align: right;}
 .exterior{
   min-height:70vh;
   width:100%;
-  background-color: rgba(105, 72, 72, 0.719);
+  background-color: #2b3137;
 }
 .exterior{
   text-align: center;
   font-family: cursive;
-  color: springgreen;
+  color: ghostwhite;
   font-weight: 600;
   font-size: 23px;
-  font-style: oblique;
-}
+  }
 .exterior1{
   display: flex;
   flex-wrap: wrap;
@@ -422,11 +433,11 @@ img {vertical-align: right;}
 .team{
   min-height: 85vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color:#2b3137;
 }
 .team{
   text-align: center;
-  color: #f9c1ba;
+  color: whitesmoke;
   margin-top: 0;
   padding-right: 12px;
 }
