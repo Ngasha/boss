@@ -363,10 +363,7 @@ img {vertical-align: right;}
   text-decoration: none;
 }
 /*designers////////////////////// */
-#designer{
-  height: 80vh;
-  background-color: antiquewhite;
-}
+
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
@@ -380,7 +377,7 @@ img {vertical-align: right;}
 .interior{
   text-align: center;
   font-family: sans-serif;
-  color: ghostwhite;
+  color: rgb(1, 1, 17);
   font-weight: 600;
   font-size: 23px;
 }
