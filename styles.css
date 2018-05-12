@@ -362,7 +362,11 @@ img {vertical-align: right;}
   text-align: center;
   text-decoration: none;
 }
-
+/*designers////////////////////// */
+#designer{
+  height: 80vh;
+  background-color: antiquewhite;
+}
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.7;
